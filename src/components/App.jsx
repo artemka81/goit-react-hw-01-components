@@ -1,3 +1,5 @@
+import { Profile } from 'components/profile/Profile';
+import user from '../date/user.json';
 export const App = () => {
   return (
     <div
@@ -6,12 +8,18 @@ export const App = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
+        fontSize: 20,
         textTransform: 'uppercase',
         color: '#010101',
       }}
     >
-      React homework template
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
     </div>
   );
 };
