@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
-  console.log(stats);
   return (
     <div class="profile">
       <div class="description">
@@ -33,5 +32,5 @@ Profile.propTypes = {
   username: PropTypes.string,
   tag: PropTypes.string,
   location: PropTypes.string,
-  stats: PropTypes.array,
+  stats: PropTypes.object,
 };
