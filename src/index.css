@@ -3,6 +3,7 @@
 /* bring in normalize.css styles */
 :root {
   --profileWidth: 250px;
+  --statisticWidth: 270px;
   --profileBGColor: #f3f6f9;
   --profileBorderCOlor: #e4e9f0;
   --greyColor: #768696;
