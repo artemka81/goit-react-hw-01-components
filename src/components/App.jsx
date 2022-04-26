@@ -11,12 +11,12 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
-        display: 'flow-root',
+        display: 'flex',
+        margin: 20,
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 20,
-        textTransform: 'uppercase',
+        fontSize: '20',
         color: '#010101',
       }}
     >
