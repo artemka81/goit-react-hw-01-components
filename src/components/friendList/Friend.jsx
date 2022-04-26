@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
+import s from './Friends.module.css';
 
 export const Friend = ({ status, name, avatar }) => {
+  const isOnline = status ? s.statusRed : s.statusGreen;
   return (
     <div>
-      <span class="status">{status ? 'Online' : 'Offline'}</span>
-      <img class="avatar" src={avatar} alt={name} width="48" />
-      <p class="name">{name}</p>
+      <span className={isOnline}></span>
+      <img className={s.avatar} src={avatar} alt={name} width="48" />
+      <p className={s.name}>{name}</p>
     </div>
   );
 };
